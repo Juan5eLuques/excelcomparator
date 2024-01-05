@@ -8,14 +8,16 @@ import { Estadisticas } from "./pages/Estadisticas";
 
 function App() {
   return (
-    <div className="flex w-full h-full">
+    <div className="bg-slate-800 w-screen h-screen">
       <Menu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contador" element={<ContadorExcel />} />
-        <Route path="/tickets" element={<Tickets />}></Route>
-        <Route path="/estadisticas" element={<Estadisticas />}></Route>
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contador" element={<ContadorExcel />} />
+          <Route path="/tickets" element={<Tickets />}></Route>
+          <Route path="/estadisticas" element={<Estadisticas />}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
